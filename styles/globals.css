@@ -5,19 +5,29 @@
 .logocircle {
   height:700px;
   width:700px;
-  border-radius:34%;
-background-color:yellow;
-}
-
-.logoframe {
-  height:700px;
-  width:700px;
-  border-radius:100%;
-  background-color:red;
+background-color:white;
+border-radius:50%;
 }
 
 .circle {
-  height:600px;
-  width:600px;
-  border-radius:34%;
+  border-radius:50%;
+
+}
+
+
+.bigbg {
+  background-image:url('/lakerbg.png');
+  background-size:100%;
+  background-repeat:no-repeat;
+}
+
+.buttontime {
+  flex: 0 0 100%; /* flex-grow, flex-shrink, flex-basis */
+
+}
+
+.circletwo{
+  border-radius:50%;
+height:200px;
+width:200px;
 }
