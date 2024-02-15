@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import Map from "@/components/Map";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -46,6 +48,9 @@ export default function Home() {
     </div>
     <div className="my-24 flex justify-center items-center">
         <h1 className="text-white">Experience new tastes in marquette blah blah</h1>
+      </div>
+      <div className="">
+      <ContactForm/>
       </div>
     </div>
   );
