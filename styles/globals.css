@@ -45,3 +45,9 @@ width:300px;
   background-size:cover;
 
 }
+
+.bottomcontact{
+  background-image:url('/lakerbg.png');
+  background-size:100%;
+  background-position:bottom;
+}
