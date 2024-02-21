@@ -28,9 +28,10 @@ border-radius:50%;
 }
 
 .circletwo{
-  border-radius:50%;
+border-radius:50%;
 height:300px;
 width:300px;
+filter: drop-shadow(5px 5px 10px #ffffff);
 }
 
 .menu-one {

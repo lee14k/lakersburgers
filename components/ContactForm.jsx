@@ -1,8 +1,7 @@
 import Map from "./Map";
 export default function ContactForm() {
   return (
-    <div className="flex justify-center items-center flex-col">
-      <h1>Contact</h1>
+    <div className="flex justify-center items-center flex-col pt-12">
       <div className="grid grid-cols-2 mx-12 gap-4">
         <div>
           <form action="#" method="POST" className="lg:flex-auto">
