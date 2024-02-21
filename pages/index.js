@@ -5,6 +5,7 @@ import Map from "@/components/Map";
 import ContactForm from "@/components/ContactForm";
 import Menu from "@/components/Menu";
 import { Wellfleet } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const wellfleet = Wellfleet({ weight: "400", subsets: ["latin"] });
 
@@ -14,7 +15,7 @@ export default function Home() {
       <div className="flex h-screen  justify-between">
         <div className="w-1/4 flex justify-center items-center mt-96 ">
           <div>
-            <div className=" text-white  bg-emerald-800 flex justify-center items-center circletwo">
+            <div className="text-white  bg-emerald-800 flex justify-center items-center circletwo">
               <span className="mx-24">
                 Handcrafted burgers and pizzas inspired by gourmet northern
                 tastes
@@ -29,8 +30,8 @@ export default function Home() {
           {/* Adjusted to center the logo */}
           <Image
             src="/lbnoblu.png"
-            height={690}
-            width={620}
+            height={790}
+            width={720}
             className="circle"
           />
         </div>
@@ -58,8 +59,8 @@ export default function Home() {
       </div>
       <div className="my-24 flex justify-center items-center">
         <div className={wellfleet.className}>
-          <h1 className="text-white text-4xl">
-            Experience new tastes in marquette blah blah
+          <h1 className="text-white text-6xl">
+            Experience new tastes in Marquette
           </h1>
         </div>
       </div>
@@ -69,6 +70,7 @@ export default function Home() {
       <div className="bottomcontact">
         <ContactForm />
       </div>
+      <Footer />
     </div>
   );
 }
