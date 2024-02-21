@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Map from "@/components/Map";
 import ContactForm from "@/components/ContactForm";
+import Menu from "@/components/Menu";
 
 export default function Home() {
   return (
@@ -11,9 +12,9 @@ export default function Home() {
         {/* Left Column for future content, adjust width as needed */}
         <div className="w-1/4 flex justify-center items-center mt-96 ">
           <div className="mx-24 ">
-            <p className="text-white  bg-emerald-800 flex justify-center items-center circletwo">
+            <div className="text-white  bg-emerald-800 flex justify-center items-center circletwo">
               <p className="mx-24">Handcrafted burgers and pizzas inspired by gourmet northern tastes </p>
-              </p>
+              </div>
           </div>
 
         </div>
@@ -52,7 +53,12 @@ export default function Home() {
         <h1 className="text-white">Experience new tastes in marquette blah blah</h1>
       </div>
       <div className="">
-        <ContactForm />
+      <Menu/>
+
+
+      </div>
+      <div className="bottomcontact">
+      <ContactForm />
       </div>
     </div>
   );

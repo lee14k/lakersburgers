@@ -32,3 +32,16 @@ border-radius:50%;
 height:300px;
 width:300px;
 }
+
+.menu-one {
+  height:520px;
+  background-image:url('/lbmenuone.png');
+  background-size:cover;
+}
+
+.menu-two {
+  height:520px;
+  background-image:url('/lbmenutwo.png');
+  background-size:cover;
+
+}
