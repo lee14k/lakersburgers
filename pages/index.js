@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import Map from "@/components/Map";
 import ContactForm from "@/components/ContactForm";
 import Menu from "@/components/Menu";
 import { Wellfleet } from "next/font/google";
@@ -12,8 +11,8 @@ const wellfleet = Wellfleet({ weight: "400", subsets: ["latin"] });
 export default function Home() {
   return (
     <div className="bigbg">
-      <div className="flex h-screen  justify-between">
-        <div className="w-1/4 flex justify-center items-center mt-96 ">
+      <div className="sm:flex sm:h-screen justify-between grid grid-cols-1">
+        <div className="sm:w-1/4 flex justify-center items-center mt-96 ">
           <div>
             <div className="text-white  bg-emerald-800 flex justify-center items-center circletwo">
               <span className="mx-24">
@@ -25,9 +24,8 @@ export default function Home() {
         </div>
 
         {/* Center Column for Logo */}
-        <div className="w-1/2 flex justify-center items-center">
+        <div className="sm:w-1/2 flex justify-center items-center">
           {" "}
-          {/* Adjusted to center the logo */}
           <Image
             src="/lbnoblu.png"
             height={790}
@@ -37,7 +35,7 @@ export default function Home() {
         </div>
 
         {/* Right Column for Buttons */}
-        <div className="w-1/4 flex flex-col justify-center gap-4 p-4">
+        <div className="sm:w-1/4 flex flex-col justify-center gap-4 p-4">
           {" "}
           {/* Adjusted to align the buttons vertically */}
           <Link href="https://www.toasttab.com/lakers">

@@ -49,3 +49,10 @@ filter: drop-shadow(5px 5px 10px #ffffff);
   background-size:100%;
   background-position:bottom;
 }
+
+@media screen and (max-width: 1000px) {
+  .bigbg {
+    width:333vw;
+  }
+
+}
