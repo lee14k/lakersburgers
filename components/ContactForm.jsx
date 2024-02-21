@@ -9,9 +9,9 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="first-name"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
+                  className="block text-sm font-semibold leading-6 text-white"
                 >
-                  First name
+                  Name
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -25,10 +25,10 @@ export default function ContactForm() {
               </div>
               <div>
                 <label
-                  htmlFor="last-name"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
+                  htmlFor="phone-number"
+                  className="block text-sm font-semibold leading-6 text-white"
                 >
-                  Last name
+                  Phone Number
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -44,7 +44,7 @@ export default function ContactForm() {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="message"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
+                  className="block text-sm font-semibold leading-6 text-white"
                 >
                   Message
                 </label>
