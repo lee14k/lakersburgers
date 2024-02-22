@@ -33,13 +33,13 @@ filter: drop-shadow(5px 5px 10px #ffffff);
 }
 
 .menu-one {
-  height:520px;
+  height:530px;
   background-image:url('/lbmenuone.png');
   background-size:cover;
 }
 
 .menu-two {
-  height:520px;
+  height:530px;
   background-image:url('/lbmenutwo.png');
   background-size:cover;
 }
@@ -51,7 +51,7 @@ filter: drop-shadow(5px 5px 10px #ffffff);
 
 @media screen and (max-width: 1000px) {
   .bigbg {
-    width:333vw;
+    width:100vw;
   }
 
 }
