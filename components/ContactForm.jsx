@@ -67,7 +67,7 @@ export default function ContactForm() {
                 Let’s talk
               </button>
             </div>
-            <p className="mt-4 text-sm leading-6 text-gray-500">
+            <p className="mt-4 text-sm leading-6 text-white">
               By submitting this form, I agree to the{" "}
               <a href="#" className="font-semibold text-indigo-600">
                 privacy&nbsp;policy
