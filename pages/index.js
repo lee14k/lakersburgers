@@ -65,8 +65,11 @@ export default function Home() {
       <div className="">
         <Menu />
       </div>
-      <div className="bottomcontact">
-        <ContactForm />
+      <div className={wellfleet.className}>
+        <div className="bottomcontact flex flex-col justify-center items-center pt-12">
+          <h1 className="text-white text-4xl">Contact Us</h1>
+          <ContactForm />
+        </div>
       </div>
       <Footer />
     </div>

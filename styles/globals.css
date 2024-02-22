@@ -48,6 +48,7 @@ filter: drop-shadow(5px 5px 10px #ffffff);
   background-image:url('/lakerbg.png');
   background-size:100%;
   background-position:bottom;
+  padding-bottom:10px;
 }
 
 @media screen and (max-width: 1000px) {
