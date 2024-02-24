@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 .logocircle {
-  height:800px;
-  width:800px;
+height:800px;
+width:800px;
 background-color:white;
 border-radius:50%;
 }
@@ -33,17 +33,20 @@ filter: drop-shadow(5px 5px 10px #ffffff);
 }
 
 .menu-one {
-  height:530px;
+  height:90%;
   background-image:url('/lbmenuone.png');
-  background-size:cover;
+  background-size:contain;
 }
 
 .menu-two {
-  height:530px;
+  height:650px;
   background-image:url('/lbmenutwo.png');
-  background-size:cover;
+  background-size:contain;
 }
-
+.menucontainer {
+  background-color: white;
+height:700px;
+}
 .bottomcontact{
   background-image:url('/bottombg.png');
   background-size:cover;
@@ -51,7 +54,10 @@ filter: drop-shadow(5px 5px 10px #ffffff);
 
 @media screen and (max-width: 1000px) {
   .bigbg {
-    width:100vw;
-  }
-
+    background-size:320%;
+background-position:center 200px;  }
+.menucontainer {
+  background-color: white;
+height:800px;
+}
 }

@@ -14,12 +14,7 @@ export default function Home() {
       <div className="sm:flex sm:h-screen justify-between grid grid-cols-1">
         <div className="sm:w-1/4 flex justify-center items-center mt-96 ">
           <div className={wellfleet.className}>
-            <div className="text-white  bg-emerald-800 flex justify-center items-center circletwo">
-              <span className="text-center mx-12">
-                Handcrafted burgers and pizzas inspired by gourmet northern
-                tastes
-              </span>
-            </div>
+          
           </div>
         </div>
 
