@@ -3,61 +3,71 @@
 @tailwind utilities;
 
 .logocircle {
-height:800px;
-width:800px;
-background-color:white;
-border-radius:50%;
+  height: 800px;
+  width: 800px;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .circle {
-  border-radius:50%;
+  border-radius: 50%;
 }
 
-
 .bigbg {
-  background-image:url('/lakerbg.png');
-  background-size:100%;
-  background-repeat:no-repeat;
+  background-image: url("/lakerbg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .buttontime {
   flex: 0 0 100%; /* flex-grow, flex-shrink, flex-basis */
-
 }
 
-.circletwo{
-border-radius:50%;
-height:300px;
-width:300px;
-filter: drop-shadow(5px 5px 10px #ffffff);
+.circletwo {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  filter: drop-shadow(5px 5px 10px #ffffff);
 }
 
 .menu-one {
-  height:90%;
-  background-image:url('/lbmenuone.png');
-  background-size:contain;
+  height: 90%;
+  background-image: url("/lbmenuone.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .menu-two {
-  height:650px;
-  background-image:url('/lbmenutwo.png');
-  background-size:contain;
+  height: 650px;
+  background-image: url("/lbmenutwo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .menucontainer {
   background-color: white;
-height:700px;
+  height: 700px;
 }
-.bottomcontact{
-  background-image:url('/bottombg.png');
-  background-size:cover;
+.bottomcontact {
+  background-image: url("/bottombg.png");
+  background-size: cover;
 }
 
 @media screen and (max-width: 1000px) {
   .bigbg {
-    background-size:320%;
-background-position:center 200px;  }
-.menucontainer {
-  background-color: white;
-height:800px;
-}
+    background-size: 320%;
+    background-position: center 200px;
+    width:150%;
+  }
+  .menucontainer {
+    background-color: white;
+    height: 800px;
+  }
+  .menu-one {
+  }
+
+  .menu-two {
+    height: 650px;
+    background-image: url("/lbmenutwo.png");
+    background-size: contain;
+  }
 }
