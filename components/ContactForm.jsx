@@ -2,7 +2,7 @@ import Map from "./Map";
 export default function ContactForm() {
   return (
     <div className="flex justify-center items-center flex-col pt-6 pb-12">
-      <div className="grid grid-cols-2 mx-12 gap-4">
+      <div className="contactwrapper grid sm:grid-cols-2 mx-12 gap-4">
         <div>
           <form action="#" method="POST" className="lg:flex-auto">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">

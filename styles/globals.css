@@ -15,8 +15,8 @@
 
 .bigbg {
   background-image: url("/lakerbg.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat:no-repeat;
 }
 
 .buttontime {
@@ -54,20 +54,24 @@
 
 @media screen and (max-width: 1000px) {
   .bigbg {
-    background-size: 320%;
-    background-position: center 200px;
-    width:150%;
+    background-size:cover;
+    background-position: center bottom 700px;
+    min-height: 100vh; 
   }
   .menucontainer {
     background-color: white;
-    height: 800px;
-  }
-  .menu-one {
+    height: 400px;
+    grid-template-columns: repeat(1,1fr);
+
   }
 
   .menu-two {
-    height: 650px;
+    height: 250px;
     background-image: url("/lbmenutwo.png");
     background-size: contain;
+  }
+
+  .contactwrapper {
+    grid-template-columns: repeat(1,1fr);
   }
 }
