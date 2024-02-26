@@ -9,6 +9,13 @@
   border-radius: 50%;
 }
 
+.mapwrapper {
+  width: 100vw;
+}
+.map {
+  width: 100%;
+  height: 500px;
+}
 .circle {
   border-radius: 50%;
 }
@@ -16,7 +23,7 @@
 .bigbg {
   background-image: url("/lakerbg.png");
   background-size: contain;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
 }
 
 .buttontime {
@@ -54,15 +61,14 @@
 
 @media screen and (max-width: 1000px) {
   .bigbg {
-    background-size:cover;
+    background-size: cover;
     background-position: center bottom 700px;
-    min-height: 100vh; 
+    min-height: 100vh;
   }
   .menucontainer {
     background-color: white;
     height: 400px;
-    grid-template-columns: repeat(1,1fr);
-
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .menu-two {

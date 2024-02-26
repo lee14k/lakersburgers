@@ -13,7 +13,6 @@ export default function Home() {
     <div className="bigbg">
       <div className="flex justify-between flex-col">
         <div className="flex justify-center items-center "></div>
-
         {/* Center Column for Logo */}
         <div className="flex justify-center items-center">
           {" "}
