@@ -65,18 +65,22 @@
     background-position: center bottom 700px;
     min-height: 100vh;
   }
-  .menucontainer {
-    background-color: white;
-    height: 400px;
-    grid-template-columns: repeat(1, 1fr);
-  }
 
   .menu-two {
-    height: 250px;
+    height: 350px;
     background-image: url("/lbmenutwo.png");
     background-size: contain;
   }
-
-  .contactwrapper {
+  .menu-one{
+    height:350px;
+    width:100%;
+    background-size:contain;
   }
+  .menucontaintwo {
+    background-color: white;
+    height: 500px;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
 }
