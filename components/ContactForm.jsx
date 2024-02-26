@@ -1,9 +1,13 @@
 import Map from "./Map";
+import Image from "next/image";
 export default function ContactForm() {
   return (
-    <div className="flex justify-center items-center flex-col pt-6 pb-12">
-      <div className="contactwrapper grid sm:grid-cols-2 mx-12 gap-4">
-        <div>
+    <div className="flex justify-center items-center flex-col pt-6 pb-12 ">
+      <div className="contactwrapper grid  mx-12 gap-4">
+        <div className="grid sm:grid-cols-2">
+          <div>
+            <Image src="/lbgsign.png" width={300} height={300} />{" "}
+          </div>
           <form action="#" method="POST" className="lg:flex-auto">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
@@ -75,10 +79,8 @@ export default function ContactForm() {
             </p>
           </form>
         </div>
-        <div>
-          <Map />
-        </div>
       </div>
+      <Map />
     </div>
   );
 }

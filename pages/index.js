@@ -11,15 +11,11 @@ const wellfleet = Wellfleet({ weight: "400", subsets: ["latin"] });
 export default function Home() {
   return (
     <div className="bigbg">
-      <div className="sm:flex sm:h-screen justify-between grid grid-cols-1">
-        <div className="sm:w-1/4 flex justify-center items-center mt-96 ">
-          <div className={wellfleet.className}>
-          
-          </div>
-        </div>
+      <div className="flex justify-between flex-col">
+        <div className="flex justify-center items-center "></div>
 
         {/* Center Column for Logo */}
-        <div className="sm:w-1/2 flex justify-center items-center">
+        <div className="flex justify-center items-center">
           {" "}
           <Image
             src="/lbnoblu.png"
@@ -30,32 +26,30 @@ export default function Home() {
         </div>
 
         {/* Right Column for Buttons */}
-        <div className="sm:w-1/4 flex flex-col justify-center gap-4 p-4">
-          {" "}
-          {/* Adjusted to align the buttons vertically */}
-          <Link href="https://www.toasttab.com/lakers">
-            <button className="w-full h-full bg-emerald-800 rounded-md px-3.5 py-2.5 text-l font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-              <span className={wellfleet.className}>Order Now!</span>
-            </button>
-          </Link>
-          <Link href="#menu">
-            <button className="w-full h-full bg-emerald-800 rounded-md px-3.5 py-2.5 text-l font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-              <span className={wellfleet.className}>Menu</span>
-            </button>
-          </Link>
-          <Link href="#contact">
-            <button className="w-full h-full bg-emerald-800 rounded-md px-3.5 py-2.5 text-l font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-              <span className={wellfleet.className}>Contact Us</span>
-            </button>
-          </Link>
+        <div className="flex flex-col justify-center items-center">
+          <div className="grid grid-rows-3 gap-10 w-1/2">
+            {" "}
+            {/* Adjusted to align the buttons vertically */}
+            <Link href="https://www.toasttab.com/lakers">
+              <button className="w-full h-full bg-emerald-800 rounded-md px-3.5 py-2.5 text-l font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                <span className={wellfleet.className}>Order Now!</span>
+              </button>
+            </Link>
+            <Link href="#menu">
+              <button className="w-full  h-full bg-emerald-800 rounded-md px-3.5 py-2.5 text-l font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                <span className={wellfleet.className}>Menu</span>
+              </button>
+            </Link>
+            <Link href="#contact">
+              <button className="w-full  h-full bg-emerald-800 rounded-md px-3.5 py-2.5 text-l font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                <span className={wellfleet.className}>Contact Us</span>
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="my-24 flex justify-center items-center">
-        <div className={wellfleet.className}>
-          <h1 className="text-white text-6xl">
-            Experience new tastes in Marquette
-          </h1>
-        </div>
+        <div className={wellfleet.className}></div>
       </div>
       <div id="menu" className="">
         <Menu />
