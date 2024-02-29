@@ -2,7 +2,6 @@
 export default function Privacy() {
   return (
     <div>
-      <Navbar/>
     <div className="privacywrap p-10 ">
       <h1 className="text-4xl mb-6 font-semibold">Privacy Policy</h1>
       <p className="text-lg mb-3">Last updated: 02/26/2024</p>
@@ -92,7 +91,6 @@ export default function Privacy() {
           of any changes by posting the new Privacy Policy on this page
         </p>
       </h2>
-      <Footer/>
     </div>
     </div>
   );

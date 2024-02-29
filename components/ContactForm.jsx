@@ -1,6 +1,41 @@
 import Map from "./Map";
+import { useState } from "react";
 import Image from "next/image";
 export default function ContactForm() {
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = {
+      firstName: event.target["firstName"].value,
+      lastName: event.target["lastName"].value,
+      email: event.target.email.value,
+      phoneNumber: event.target["phoneNumber"].value,
+      message: event.target.message.value,
+    };
+
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setIsModalOpen(true);
+        console.log("Form submitted successfully");
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("There was an error submitting the form:", error);
+    }
+  };
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <div className="flex justify-center items-center flex-col pt-6 pb-12 ">
       <div className="contactwrapper grid  mx-12 gap-4">
@@ -8,7 +43,7 @@ export default function ContactForm() {
           <div>
             <Image src="/lbgsign.png" width={300} height={300} />{" "}
           </div>
-          <form action="#" method="POST" className="lg:flex-auto">
+          <form onSubmit={handleSubmit} method="POST" className="lg:flex-auto">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
                 <label
@@ -20,8 +55,8 @@ export default function ContactForm() {
                 <div className="mt-2.5">
                   <input
                     type="text"
-                    name="first-name"
-                    id="first-name"
+                    name="firstName"
+                    id="firstName"
                     autoComplete="given-name"
                     className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
@@ -29,7 +64,7 @@ export default function ContactForm() {
               </div>
               <div>
                 <label
-                  htmlFor="phone-number"
+                  htmlFor="phoneNumber"
                   className="block text-sm font-semibold leading-6 text-white"
                 >
                   Phone Number
@@ -37,9 +72,9 @@ export default function ContactForm() {
                 <div className="mt-2.5">
                   <input
                     type="text"
-                    name="last-name"
-                    id="last-name"
-                    autoComplete="family-name"
+                    name="phoneNumber"
+                    id="phoneNumber"
+                    autoComplete="phone-number"
                     className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
