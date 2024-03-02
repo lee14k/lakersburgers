@@ -39,14 +39,14 @@
 
 .menu-one {
   height: 90%;
-  background-image: url("/lbmenuone.png");
+  background-image: url("/menuone.jpg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .menu-two {
   height: 650px;
-  background-image: url("/lbmenutwo.png");
+  background-image: url("/menutwo.jpg");
   background-size: contain;
   background-repeat: no-repeat;
 }
