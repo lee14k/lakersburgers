@@ -68,19 +68,19 @@
 
   .menu-two {
     height: 350px;
-    background-image: url("/lbmenutwo.png");
+    background-image: url("/menutwo.png");
     background-size: contain;
   }
-  .menu-one{
-    height:350px;
-    width:100%;
-    background-size:contain;
+  .menu-one {
+    height: 350px;
+    width: 100%;
+    background-size: contain;
+    background-image: url("/menuone.png");
   }
   .menucontaintwo {
     background-color: white;
     height: 500px;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-
 }
