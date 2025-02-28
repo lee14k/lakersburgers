@@ -30,17 +30,12 @@ export default function Home() {
             {" "}
             {/* Adjusted to align the buttons vertically */}
             <Link href="https://www.toasttab.com/lakers">
-              <button className="w-full h-full bg-emerald-800 rounded-md px-3.5 py-2.5 text-l font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              <button className="w-full h-full bg-emerald-800 rounded-md px-3.5 py-2.5 text-3xl font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                 <span className={wellfleet.className}>Order Now!</span>
               </button>
             </Link>
-            <Link href="#menu">
-              <button className="w-full  h-full bg-emerald-800 rounded-md px-3.5 py-2.5 text-l font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                <span className={wellfleet.className}>Menu</span>
-              </button>
-            </Link>
             <Link href="#contact">
-              <button className="w-full  h-full bg-emerald-800 rounded-md px-3.5 py-2.5 text-l font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              <button className="w-full  h-full bg-emerald-800 rounded-md px-3.5 py-2.5 text-3xl font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                 <span className={wellfleet.className}>Contact Us</span>
               </button>
             </Link>
@@ -49,9 +44,6 @@ export default function Home() {
       </div>
       <div className="my-24 flex justify-center items-center">
         <div className={wellfleet.className}></div>
-      </div>
-      <div id="menu" className="">
-        <Menu />
       </div>
       <div className={wellfleet.className}>
         <div
